@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\samue\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
+3877595857.index
+2610737006.index
