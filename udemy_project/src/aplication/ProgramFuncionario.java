@@ -22,6 +22,7 @@ public class ProgramFuncionario {
 		System.out.println("Informe o valor da taxa: ");
 		fun.Taxa = sc.nextDouble();
 		fun.NetSalary();
+		
 		System.out.printf("Funcionario: " + fun);
 		System.out.println();
 		System.out.println("Infome a porcentagem para aumentar no salario: ");
