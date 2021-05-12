@@ -17,8 +17,7 @@ public class ProgramDolar {
 		System.out.println("Quantos dolares a ser comprado?");
 		double quantity = sc.nextDouble();
 		double total = CurrencyConverter.amount(quantity, price); 
-		System.out.printf("Total as ser pago em reais = R$3.1%.2f%n", total);
-		
+		System.out.printf("Total as ser pago em reais = R$%.2f%n", total);		
 		
 		
 		sc.close();
