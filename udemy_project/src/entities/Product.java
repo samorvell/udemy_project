@@ -1,20 +1,50 @@
 package entities;
 
+import java.security.PrivateKey;
+
 public class Product {
 		
-	
-	public String name;
-	public double price;
-	public int quantity;
+	//encapsulando os atributos da classe, mudando de public para private
+	private String name;
+	private double price;
+	private int quantity;
 
-	public Product(String name, double price, int quantity){ //esse construtor foi criado para forçar a incialização das variaveis com valores, para não correr risco de criar produtos sem atributos
-		this.name = name; // this. refere-se ao atributo da classe, sem o this. a variavel local
-		this.price = price;
-		this.quantity = quantity;
-
+	public Product() {
 
 	}
-	
+
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
+
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
 	public double totalValueInStock() {
 		return price * quantity;
 	}

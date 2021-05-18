@@ -19,16 +19,16 @@ public class ProductProgram {
 		String name = sc.nextLine();
 		System.out.print("Preço: ");
 		double price = sc.nextDouble();
-		System.out.print("Quantide em estoque: ");
-		int quantity = sc.nextInt();
+		//System.out.print("Quantide em estoque: ");
+		//int quantity = sc.nextInt();
 
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price);
 		
 		System.out.println();
 		System.out.println("Dados do produto: " + product);
 		System.out.println();
 		System.out.print("Informa a quantidade de produtos a adicionar no estoque: ");
-		quantity = sc.nextInt(); //retirado o tipo da variavel, pois já foi informada anteriomente.
+		int quantity = sc.nextInt(); //retirado o tipo da variavel, pois já foi informada anteriomente.
 		product.addProducts(quantity);
 		
 		System.out.println();
