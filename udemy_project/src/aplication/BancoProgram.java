@@ -14,23 +14,23 @@ public class BancoProgram {
         //numero da conta
         System.out.println("Entre com os dados a seguir: ");
         System.out.print("Informe o numero da conta: ");
-        int numberac = sc.nextInt();
-
+        int number = sc.nextInt();
+        sc.nextLine();
         //nome do titular
-        System.out.print("Inform o nome do titular da conta: ");
-
-        String titularac = sc.nextLine();
+        System.out.print("Nome: ");
+        String holder = sc.nextLine();
+        sc.nextLine();
 
         //se terar deposito inicial
         System.out.print("Deposito inicial (S/N)? ");
-        String temdepoini = sc.nextLine();
+        String initdeposit = sc.nextLine();
+        sc.nextLine();
 
-        Account account = new Account(numberac, temdepoini, titularac);
+        Account account = new Account(number, holder);
 
-        System.out.print("teste " + account.getTemdepoini());
-
+        System.out.println();
         //apresentar os dados da conta
-        System.out.print("Dados da conta: " + account);
+        System.out.println("Dados da conta: " + account);
 
 
         //
