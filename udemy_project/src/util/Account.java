@@ -13,15 +13,16 @@ public class Account {
 
     }
 
-    public Account(int number, String holder, double balance) {
+        public Account(int number, String holder) {
         this.number = number;
         this.holder = holder;
-        this.balance = balance;
+
     }
 
-    public Account(int number, String holder) {
+    public Account(int number, String holder, double initdeposit) {
         this.number = number;
         this.holder = holder;
+        deposit(initdeposit);
 
     }
 
@@ -34,11 +35,19 @@ public class Account {
     }
 
     public double getBalance(double balance) {
-        return this.balance = balance;
+        return balance;
     }
 
     public void setholder(String holder) {
         this.holder = holder;
+    }
+
+    public void deposit (double amount){
+        balance += amount;
+    }
+
+    public void withdraw(double amount){
+        balance -= amount + TAX;
     }
 
     public String toString() {
@@ -46,7 +55,7 @@ public class Account {
                 + ", "
                 + "Holder: "
                 + holder
-                + ", $ "
+                + ", Saldo $ "
                 + String.format("%.2f", balance);
     }
 
